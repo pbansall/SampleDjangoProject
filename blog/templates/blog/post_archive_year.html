@@ -1,0 +1,24 @@
+{% extends 'blog/base.html'%}
+
+{%block title%}
+Archive Blog
+{% endblock %}
+
+{%block content%}
+<div class = "container">
+     <section>
+       <div>
+         <h1>all articles for {{year|date:"Y"}}</h1>
+         <ul>
+             {% for obj in object_list%}
+               <li> {{ obj.title}}:{{obj.date_posted|date:"F j, Y"}}</li>
+             {% endfor %}
+         </ul>
+
+    </div>
+     </section>
+</div>
+{%endblock%}
+
+{%block footer%}
+{% endblock %}

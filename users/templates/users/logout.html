@@ -1,0 +1,16 @@
+{% extends 'blog/base.html' %}
+
+{% block content %}
+    <div class="container">
+          <h3>You have been logged out</h3>
+        <div class="container">
+          <small>
+            Thanks for spending some quality time with the Web site today      
+          </small></div>
+          <div class="container"> <small>
+            <a href ="{% url 'login' %}">Log In Again</a>
+          </small></div>
+    </div>s
+{% endblock%}
+
+{% block footer %}{% endblock %}
